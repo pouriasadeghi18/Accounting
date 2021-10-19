@@ -65,5 +65,21 @@ namespace Accounting.App.Forms
         {
             SearchData(guna2TextBox1.Text);
         }
+
+        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            int costomerId = int.Parse(guna2DataGridView1.CurrentRow.Cells[0].Value.ToString());
+            if(MessageBox.Show("آیا میخواهید فیلد مورد نظر را حذف کنید", "حذف",MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                Bl.Delete(costomerId);
+            }
+            
+            SetDataGrid();
+        }
     }
 }
