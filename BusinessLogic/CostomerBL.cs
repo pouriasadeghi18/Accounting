@@ -24,9 +24,9 @@ namespace BusinessLogic
         {
             return dl.Read(costomer);
         }
-        public List<Costomer> Read(string fullname, string email)
+        public List<Costomer> Read(string parametr)
         {
-            return dl.Read(fullname, email);
+            return dl.Read(parametr);
         }
         public string Update(int Costomerid, Costomer costomerNew)
         {

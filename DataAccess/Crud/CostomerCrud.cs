@@ -34,9 +34,9 @@ namespace DataAccess.Crud
         {
             return db.Costomers.Any(i => i.E_Post == costomer.E_Post || i.Mobile == costomer.Mobile);
         }
-        public List<Costomer> Read(string fullname, string email)
+        public List<Costomer> Read(string parameter)
         {
-            return db.Costomers.Where(i => i.FullName == fullname || i.E_Post == email).ToList();
+            return db.Costomers.Where(i => i.FullName.Contains(parameter) || i.E_Post.Contains(parameter) || i.Mobile.Contains(parameter) ).ToList();
         }
         public Costomer Read(int Costomerid)
         {
