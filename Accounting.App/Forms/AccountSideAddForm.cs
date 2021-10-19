@@ -16,6 +16,7 @@ namespace Accounting.App.Forms
 {
     public partial class AccountSideAddForm : Form
     {
+        public int CustomerId = 0;
         public AccountSideAddForm()
         {
             InitializeComponent();
@@ -137,7 +138,7 @@ namespace Accounting.App.Forms
         }
 
         private void rjButton2_Click(object sender, EventArgs e)
-        {
+        {  
             if(rjTextBox1.Texts.Trim() == string.Empty)
             {
                 rjTextBox1.Focus();
@@ -181,7 +182,16 @@ namespace Accounting.App.Forms
                 costomer.Password = rjTextBox5.Texts;
                 costomer.Address = rjTextBox4.Texts;
                 costomer.PicAddress = imageName;
-                MessageBox.Show(bl.Creat(costomer));
+                
+                if(CustomerId == 0)
+                {
+                    MessageBox.Show(bl.Creat(costomer));
+                }
+                else
+                {
+                    MessageBox.Show(bl.Update(CustomerId, costomer));
+                }
+
                 DialogResult = DialogResult.OK;
 
             }
@@ -190,6 +200,23 @@ namespace Accounting.App.Forms
                 MessageBox.Show("لطفا اطلاعات  را دقیق وارد کنید");
             }
 
+        }
+
+        private void AccountSideAddForm_Load(object sender, EventArgs e)
+        {
+            if (CustomerId != 0)
+            {
+                this.Text="ویرایش شخص";
+                rjButton2.Text = "ویرایش";
+                var customer = bl.Read(CustomerId);
+                rjTextBox1.Texts = customer.FullName;
+                rjTextBox2.Texts = customer.E_Post;
+                rjTextBox3.Texts = customer.Mobile;
+                rjTextBox5.Texts = customer.Password;
+                rjTextBox6.Texts = customer.Password;
+                rjTextBox4.Texts = customer.Address;
+                guna2PictureBox1.ImageLocation = Application.StartupPath + "/Images/" + customer.PicAddress;
+            }
         }
     }
 }

@@ -31,7 +31,7 @@ namespace Accounting.App.Forms
             guna2DataGridView1.Columns["FullName"].HeaderText = "نام";
             guna2DataGridView1.Columns["E_Post"].HeaderText = "ایمیل";
             guna2DataGridView1.Columns["Mobile"].HeaderText = "موبایل";
-
+           
 
 
         }
@@ -92,6 +92,22 @@ namespace Accounting.App.Forms
             {
                 SetDataGrid();
             }
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            if(guna2DataGridView1.CurrentRow != null)
+            {
+                int customerID =int.Parse(guna2DataGridView1.CurrentRow.Cells[0].Value.ToString());
+                AccountSideAddForm editForm = new AccountSideAddForm();
+                editForm.CustomerId = customerID;
+                if(editForm.ShowDialog() == DialogResult.OK)
+                {
+                    SetDataGrid();
+                }
+            }
+            
+
         }
     }
 }

@@ -36,5 +36,9 @@ namespace BusinessLogic
         {
             return dl.Delete(Costomerid);
         }
+        public Costomer Read(int Costomerid)
+        {
+            return dl.Read(Costomerid);
+        }
     }
 }

@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="Crud\CostomerCrud.cs" />
     <Compile Include="DataBase.cs" />
+    <Compile Include="GenericRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
