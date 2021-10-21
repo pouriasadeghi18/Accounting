@@ -57,6 +57,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Accounting.cs" />
+    <Compile Include="AccountingType.cs" />
     <Compile Include="Costomer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

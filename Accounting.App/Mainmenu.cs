@@ -107,10 +107,18 @@ namespace Accounting.App
             }
         }
 
-        private void iconButton6_Click(object sender, EventArgs e)
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.Transactions(), sender);
+        }
+
+        
+
+        private void iconButton6_Click_1(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            DialogResult dialogResult = MessageBox.Show("خروج", "آیا میخواهید از برنامه خارج شوید", MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show("آیا میخواهید از برنامه خارج شوید", "خروج", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
                 Application.Exit();

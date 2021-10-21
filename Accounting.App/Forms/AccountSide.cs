@@ -28,7 +28,7 @@ namespace Accounting.App.Forms
             guna2DataGridView1.Columns["PicAddress"].Visible = false;
             guna2DataGridView1.Columns["Address"].Visible = false;
             guna2DataGridView1.Columns["Password"].Visible = false;
-            guna2DataGridView1.Columns["FullName"].HeaderText = "نام";
+            guna2DataGridView1.Columns["FullName"].HeaderText = "نام اشخاص";
             guna2DataGridView1.Columns["E_Post"].HeaderText = "ایمیل";
             guna2DataGridView1.Columns["Mobile"].HeaderText = "موبایل";
            

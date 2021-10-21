@@ -40,5 +40,10 @@ namespace BusinessLogic
         {
             return dl.Read(Costomerid);
         }
+        public int GetId(string name)
+        {
+            return dl.GetId(name);
+        }
+        
     }
 }

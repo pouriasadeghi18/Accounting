@@ -34,6 +34,10 @@ namespace DataAccess.Crud
         {
             return db.Costomers.Any(i => i.E_Post == costomer.E_Post || i.Mobile == costomer.Mobile);
         }
+        //public bool ReadName(Costomer costomer)
+        //{
+        //    return db.Costomers.Any(i => i.FullName == costomer.FullName);
+        //}
         public List<Costomer> Read(string parameter)
         {
             return db.Costomers.Where(i => i.FullName.Contains(parameter) || i.E_Post.Contains(parameter) || i.Mobile.Contains(parameter) ).ToList();
@@ -41,6 +45,10 @@ namespace DataAccess.Crud
         public Costomer Read(int Costomerid)
         {
             return db.Costomers.Where(i => i.CostomerID == Costomerid).Single();
+        }
+        public int GetId(string name)
+        {
+            return db.Costomers.First(i => i.FullName == name).CostomerID;
         }
         public string Update(int Costomerid, Costomer Costomersnew)
         {
