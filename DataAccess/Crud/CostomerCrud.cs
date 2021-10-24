@@ -69,6 +69,26 @@ namespace DataAccess.Crud
             db.SaveChanges();
             return "حذف با موفقعیت انجام شد";
         }
+        public string GetCustomerNameByID(int Costomerid)
+        {
+          return  db.Costomers.Find(Costomerid).FullName;
+        }
+       public List<CostomerViewModel> GetNameCustomer(string filter = "")
+        {
+            if(filter == "")
+            {
+                return db.Costomers.Select(i => new CostomerViewModel()
+                {
+                    CostomerID = i.CostomerID,
+                    FullName = i.FullName
+                }).ToList();
+            }
+            return db.Costomers.Where(i => i.FullName.Contains(filter)).Select(i => new CostomerViewModel()
+            {
+                CostomerID = i.CostomerID, 
+                FullName = i.FullName
+            }).ToList();
+        }
     }
 }
 

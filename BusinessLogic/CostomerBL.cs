@@ -44,6 +44,13 @@ namespace BusinessLogic
         {
             return dl.GetId(name);
         }
-        
+        public string GetCustomerNameByID(int Costomerid)
+        {
+            return dl.GetCustomerNameByID(Costomerid);
+        }
+       public List<CostomerViewModel> GetNameCustomer(string filter = "")
+        {
+            return dl.GetNameCustomer(filter);
+        }
     }
 }

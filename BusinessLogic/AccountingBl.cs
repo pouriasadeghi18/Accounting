@@ -17,5 +17,29 @@ namespace BusinessLogic
         {
             return dl.Create(accounting);
         }
+        public List<Accounting> Read()
+        {
+            return dl.Read();
+        }
+        public Accounting Read(int accountingid)
+        {
+            return dl.Read(accountingid);
+        }
+        public List<Accounting> ReadByTypeID(int TypeID)
+        {
+            return dl.ReadByTypeID(TypeID);
+        }
+        public string Delete(int accountingid)
+        {
+            return dl.Delete(accountingid);
+        }
+        public string Update(int accountingid, Accounting Accountingnew)
+        {
+            return dl.Update(accountingid, Accountingnew);
+        }
+        public List<Accounting> ReadByCustomerId(int CustomerID)
+        {
+            return dl.ReadByCustomerId(CustomerID);
+        }
     }
 }

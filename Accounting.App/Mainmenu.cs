@@ -110,10 +110,25 @@ namespace Accounting.App
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.Transactions(), sender);
+            OpenChildForm(new Forms.Transaction(), sender);
         }
 
-        
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            Forms.Report report = new Forms.Report();
+            report.TypeId = 1;
+            OpenChildForm(report, sender);
+            
+        }
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+            Forms.Report report = new Forms.Report();
+            report.TypeId = 2;
+
+            OpenChildForm(report, sender);
+           
+        }
 
         private void iconButton6_Click_1(object sender, EventArgs e)
         {
@@ -124,5 +139,7 @@ namespace Accounting.App
                 Application.Exit();
             }
         }
+
+        
     }
 }
