@@ -35,11 +35,11 @@ namespace Accounting.App.Forms
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AccountSide));
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.Btnaddcostmoer = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.Btnaddcostmoer = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -124,6 +124,17 @@ namespace Accounting.App.Forms
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
+            // Btnaddcostmoer
+            // 
+            this.Btnaddcostmoer.Image = global::Accounting.App.Properties.Resources.new_document;
+            this.Btnaddcostmoer.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Btnaddcostmoer.MergeIndex = 1;
+            this.Btnaddcostmoer.Name = "Btnaddcostmoer";
+            this.Btnaddcostmoer.Size = new System.Drawing.Size(101, 82);
+            this.Btnaddcostmoer.Text = "شخص جدید";
+            this.Btnaddcostmoer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.Btnaddcostmoer.Click += new System.EventHandler(this.Btnaddcostmoer_Click);
+            // 
             // toolStripButton2
             // 
             this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
@@ -182,17 +193,6 @@ namespace Accounting.App.Forms
             this.guna2TextBox1.TabIndex = 2;
             this.guna2TextBox1.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
-            // Btnaddcostmoer
-            // 
-            this.Btnaddcostmoer.Image = global::Accounting.App.Properties.Resources.new_document;
-            this.Btnaddcostmoer.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.Btnaddcostmoer.MergeIndex = 1;
-            this.Btnaddcostmoer.Name = "Btnaddcostmoer";
-            this.Btnaddcostmoer.Size = new System.Drawing.Size(101, 82);
-            this.Btnaddcostmoer.Text = "شخص جدید";
-            this.Btnaddcostmoer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.Btnaddcostmoer.Click += new System.EventHandler(this.Btnaddcostmoer_Click);
-            // 
             // AccountSide
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -201,6 +201,7 @@ namespace Accounting.App.Forms
             this.Controls.Add(this.guna2TextBox1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.guna2DataGridView1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AccountSide";
             this.Text = "AccountSide";
             this.Load += new System.EventHandler(this.AccountSide_Load);

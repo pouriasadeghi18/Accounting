@@ -18,11 +18,18 @@ namespace Accounting.App.Forms
 
         public Report()
         {
+            
+            
+            
+            
+            
+            
             InitializeComponent();
 
         }
         public int TypeId;
-        void Refresh()
+        private string ReportName;
+      private  void Refresh()
         {
             guna2DataGridView1.DataSource = null;
             guna2DataGridView1.Rows.Clear();
@@ -36,6 +43,7 @@ namespace Accounting.App.Forms
             result.AddRange(bl.Read().Where(i => i.Typeid == TypeId));
             foreach (var item in result)
             {
+ 
                 string CustomerName = cbl.GetCustomerNameByID(item.Costomerid);
                 guna2DataGridView1.Rows.Add(item.id, CustomerName, item.Amount, item.DataTitle.ToShamsi(), item.Discraption);
             }
@@ -145,6 +153,35 @@ namespace Accounting.App.Forms
             rjComboBox1.DisplayMember = "FullName";
             rjComboBox1.ValueMember = "CostomerID";
             Refresh();
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            if (TypeId == 1)
+            {
+                ReportName = "گذارش پرداختی ها";
+            }
+            else
+            {
+                ReportName = "گذارش دریافتی ها";
+            }
+
+
+            DataTable dtprint = new DataTable();
+            dtprint.Columns.Add("Costomer");
+            dtprint.Columns.Add("Amount");
+            dtprint.Columns.Add("DataTitle");
+            dtprint.Columns.Add("Discraption");
+            foreach (DataGridViewRow item in guna2DataGridView1.Rows)
+            {
+                dtprint.Rows.Add(item.Cells[1].Value.ToString(), item.Cells[2].Value.ToString(), item.Cells[3].Value.ToString(), item.Cells[4].Value.ToString());
+
+            }
+            stiReport1.Dictionary.Variables["Name"].Value = ReportName;
+            
+            stiReport1.RegData("DT", dtprint);
+            stiReport1.Render();
+            stiReport1.Show();
         }
     }
 }

@@ -30,6 +30,7 @@ namespace Accounting.App.Forms
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AccountSideAddForm));
             this.rjTextBox1 = new RJCodeAdvance.RJControls.RJTextBox();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.rjButton2 = new RJCodeAdvance.RJControls.RJButton();
@@ -381,6 +382,7 @@ namespace Accounting.App.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(882, 573);
             this.Controls.Add(this.guna2ShadowPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(900, 620);
             this.MinimumSize = new System.Drawing.Size(900, 620);

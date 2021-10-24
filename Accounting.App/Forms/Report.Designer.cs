@@ -52,6 +52,7 @@ namespace Accounting.App.Forms
             this.Amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DataTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Discraption = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.stiReport1 = new Stimulsoft.Report.StiReport();
             this.toolStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
@@ -111,6 +112,7 @@ namespace Accounting.App.Forms
             this.toolStripButton1.Size = new System.Drawing.Size(54, 82);
             this.toolStripButton1.Text = "چاپ";
             this.toolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // groupBox1
             // 
@@ -323,6 +325,29 @@ namespace Accounting.App.Forms
             this.Discraption.Name = "Discraption";
             this.Discraption.ReadOnly = true;
             // 
+            // stiReport1
+            // 
+            this.stiReport1.CookieContainer = null;
+            this.stiReport1.EngineVersion = Stimulsoft.Report.Engine.StiEngineVersion.EngineV2;
+            this.stiReport1.Key = "ec137b96ccda403188a53a5222122a61";
+            this.stiReport1.ReferencedAssemblies = new string[] {
+        "System.Dll",
+        "System.Drawing.Dll",
+        "System.Windows.Forms.Dll",
+        "System.Data.Dll",
+        "System.Xml.Dll",
+        "Stimulsoft.Controls.Dll",
+        "Stimulsoft.Base.Dll",
+        "Stimulsoft.Report.Dll"};
+            this.stiReport1.ReportAlias = "Report";
+            this.stiReport1.ReportGuid = "c4e854f53fc0490ebe67e62f8930914f";
+            this.stiReport1.ReportName = "Report";
+            this.stiReport1.ReportSource = resources.GetString("stiReport1.ReportSource");
+            this.stiReport1.ReportUnit = Stimulsoft.Report.StiReportUnitType.Inches;
+            this.stiReport1.ScriptLanguage = Stimulsoft.Report.StiReportLanguageType.CSharp;
+            this.stiReport1.StoreImagesInResources = true;
+            this.stiReport1.UseProgressInThread = false;
+            // 
             // Report
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -332,6 +357,7 @@ namespace Accounting.App.Forms
             this.Controls.Add(this.guna2DataGridView1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.toolStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Report";
             this.Text = "PaymentsReport";
             this.Load += new System.EventHandler(this.Report_Load);
@@ -366,5 +392,6 @@ namespace Accounting.App.Forms
         private System.Windows.Forms.DataGridViewTextBoxColumn Amount;
         private System.Windows.Forms.DataGridViewTextBoxColumn DataTitle;
         private System.Windows.Forms.DataGridViewTextBoxColumn Discraption;
+        private Stimulsoft.Report.StiReport stiReport1;
     }
 }

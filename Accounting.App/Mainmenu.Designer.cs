@@ -29,24 +29,25 @@ namespace Accounting.App
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mainmenu));
             this.panelmenu = new System.Windows.Forms.Panel();
-            this.panelLogo = new Guna.UI2.WinForms.Guna2Panel();
-            this.lableName = new System.Windows.Forms.Label();
-            this.panelTitle = new System.Windows.Forms.Panel();
-            this.labelTitle = new System.Windows.Forms.Label();
-            this.panelDesktop = new System.Windows.Forms.Panel();
-            this.closechildform = new FontAwesome.Sharp.IconButton();
             this.iconButton6 = new FontAwesome.Sharp.IconButton();
             this.iconButton5 = new FontAwesome.Sharp.IconButton();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.menubtn1 = new FontAwesome.Sharp.IconButton();
+            this.panelLogo = new Guna.UI2.WinForms.Guna2Panel();
+            this.lableName = new System.Windows.Forms.Label();
             this.accunt = new FontAwesome.Sharp.IconPictureBox();
+            this.panelTitle = new System.Windows.Forms.Panel();
+            this.closechildform = new FontAwesome.Sharp.IconButton();
+            this.labelTitle = new System.Windows.Forms.Label();
+            this.panelDesktop = new System.Windows.Forms.Panel();
             this.panelmenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
-            this.panelTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.accunt)).BeginInit();
+            this.panelTitle.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelmenu
@@ -64,76 +65,6 @@ namespace Accounting.App
             this.panelmenu.Name = "panelmenu";
             this.panelmenu.Size = new System.Drawing.Size(200, 653);
             this.panelmenu.TabIndex = 0;
-            // 
-            // panelLogo
-            // 
-            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(206)))), ((int)(((byte)(0)))));
-            this.panelLogo.Controls.Add(this.lableName);
-            this.panelLogo.Controls.Add(this.accunt);
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.ShadowDecoration.Parent = this.panelLogo;
-            this.panelLogo.Size = new System.Drawing.Size(200, 80);
-            this.panelLogo.TabIndex = 2;
-            // 
-            // lableName
-            // 
-            this.lableName.AutoSize = true;
-            this.lableName.Font = new System.Drawing.Font("Far.Diplomaat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lableName.Location = new System.Drawing.Point(6, 28);
-            this.lableName.Name = "lableName";
-            this.lableName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lableName.Size = new System.Drawing.Size(142, 29);
-            this.lableName.TabIndex = 0;
-            this.lableName.Text = "کاربر گرامی خوش آمدید";
-            // 
-            // panelTitle
-            // 
-            this.panelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(151)))), ((int)(((byte)(2)))));
-            this.panelTitle.Controls.Add(this.closechildform);
-            this.panelTitle.Controls.Add(this.labelTitle);
-            this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitle.Location = new System.Drawing.Point(0, 0);
-            this.panelTitle.Name = "panelTitle";
-            this.panelTitle.Size = new System.Drawing.Size(982, 80);
-            this.panelTitle.TabIndex = 2;
-            // 
-            // labelTitle
-            // 
-            this.labelTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelTitle.AutoSize = true;
-            this.labelTitle.Font = new System.Drawing.Font("Far.Diplomaat", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.labelTitle.Location = new System.Drawing.Point(432, 19);
-            this.labelTitle.Name = "labelTitle";
-            this.labelTitle.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelTitle.Size = new System.Drawing.Size(123, 47);
-            this.labelTitle.TabIndex = 2;
-            this.labelTitle.Text = "صفحه اصلی";
-            // 
-            // panelDesktop
-            // 
-            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Font = new System.Drawing.Font("Far.Diplomaat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.panelDesktop.Location = new System.Drawing.Point(0, 80);
-            this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(982, 573);
-            this.panelDesktop.TabIndex = 3;
-            // 
-            // closechildform
-            // 
-            this.closechildform.Dock = System.Windows.Forms.DockStyle.Right;
-            this.closechildform.FlatAppearance.BorderSize = 0;
-            this.closechildform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.closechildform.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.closechildform.IconColor = System.Drawing.Color.Black;
-            this.closechildform.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.closechildform.Location = new System.Drawing.Point(907, 0);
-            this.closechildform.Name = "closechildform";
-            this.closechildform.Size = new System.Drawing.Size(75, 80);
-            this.closechildform.TabIndex = 0;
-            this.closechildform.UseVisualStyleBackColor = true;
-            this.closechildform.Click += new System.EventHandler(this.closechildform_Click);
             // 
             // iconButton6
             // 
@@ -272,6 +203,29 @@ namespace Accounting.App
             this.menubtn1.UseVisualStyleBackColor = true;
             this.menubtn1.Click += new System.EventHandler(this.menubtn1_Click);
             // 
+            // panelLogo
+            // 
+            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(206)))), ((int)(((byte)(0)))));
+            this.panelLogo.Controls.Add(this.lableName);
+            this.panelLogo.Controls.Add(this.accunt);
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.ShadowDecoration.Parent = this.panelLogo;
+            this.panelLogo.Size = new System.Drawing.Size(200, 80);
+            this.panelLogo.TabIndex = 2;
+            // 
+            // lableName
+            // 
+            this.lableName.AutoSize = true;
+            this.lableName.Font = new System.Drawing.Font("Far.Diplomaat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lableName.Location = new System.Drawing.Point(6, 28);
+            this.lableName.Name = "lableName";
+            this.lableName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.lableName.Size = new System.Drawing.Size(142, 29);
+            this.lableName.TabIndex = 0;
+            this.lableName.Text = "کاربر گرامی خوش آمدید";
+            // 
             // accunt
             // 
             this.accunt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(206)))), ((int)(((byte)(0)))));
@@ -286,6 +240,53 @@ namespace Accounting.App
             this.accunt.TabIndex = 0;
             this.accunt.TabStop = false;
             // 
+            // panelTitle
+            // 
+            this.panelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(151)))), ((int)(((byte)(2)))));
+            this.panelTitle.Controls.Add(this.closechildform);
+            this.panelTitle.Controls.Add(this.labelTitle);
+            this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitle.Location = new System.Drawing.Point(0, 0);
+            this.panelTitle.Name = "panelTitle";
+            this.panelTitle.Size = new System.Drawing.Size(982, 80);
+            this.panelTitle.TabIndex = 2;
+            // 
+            // closechildform
+            // 
+            this.closechildform.Dock = System.Windows.Forms.DockStyle.Right;
+            this.closechildform.FlatAppearance.BorderSize = 0;
+            this.closechildform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.closechildform.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.closechildform.IconColor = System.Drawing.Color.Black;
+            this.closechildform.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.closechildform.Location = new System.Drawing.Point(907, 0);
+            this.closechildform.Name = "closechildform";
+            this.closechildform.Size = new System.Drawing.Size(75, 80);
+            this.closechildform.TabIndex = 0;
+            this.closechildform.UseVisualStyleBackColor = true;
+            this.closechildform.Click += new System.EventHandler(this.closechildform_Click);
+            // 
+            // labelTitle
+            // 
+            this.labelTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelTitle.AutoSize = true;
+            this.labelTitle.Font = new System.Drawing.Font("Far.Diplomaat", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.labelTitle.Location = new System.Drawing.Point(432, 19);
+            this.labelTitle.Name = "labelTitle";
+            this.labelTitle.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.labelTitle.Size = new System.Drawing.Size(123, 47);
+            this.labelTitle.TabIndex = 2;
+            this.labelTitle.Text = "صفحه اصلی";
+            // 
+            // panelDesktop
+            // 
+            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktop.Font = new System.Drawing.Font("Far.Diplomaat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.panelDesktop.Location = new System.Drawing.Point(0, 80);
+            this.panelDesktop.Name = "panelDesktop";
+            this.panelDesktop.Size = new System.Drawing.Size(982, 573);
+            this.panelDesktop.TabIndex = 3;
+            // 
             // Mainmenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 33F);
@@ -295,6 +296,7 @@ namespace Accounting.App
             this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.panelmenu);
             this.Font = new System.Drawing.Font("IRANSansWeb", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1200, 700);
@@ -304,9 +306,9 @@ namespace Accounting.App
             this.panelmenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.accunt)).EndInit();
             this.panelTitle.ResumeLayout(false);
             this.panelTitle.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.accunt)).EndInit();
             this.ResumeLayout(false);
 
         }

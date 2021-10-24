@@ -433,6 +433,7 @@ namespace Accounting.App
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(807, 737);
             this.Controls.Add(this.guna2ShadowPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Location = new System.Drawing.Point(825, 784);
             this.MaximizeBox = false;
             this.Name = "register";
