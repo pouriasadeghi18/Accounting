@@ -140,6 +140,9 @@ namespace Accounting.App
             }
         }
 
-        
+        private void iconButton5_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.AboutUs(), sender);
+        }
     }
 }

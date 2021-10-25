@@ -30,7 +30,7 @@ namespace Accounting.App.Forms
             Regex mRegxExpression;
             if (rjTextBox1.Texts.Trim() != string.Empty)
             {
-                mRegxExpression = new Regex(@"^[\u0600-\u06FF]+$");
+                mRegxExpression = new Regex(@"^[\u0600-\u06FF ]+$");
 
                 if (!mRegxExpression.IsMatch(rjTextBox1.Texts.Trim()))
                 {
@@ -93,40 +93,9 @@ namespace Accounting.App.Forms
             }
         }
 
-        private void rjTextBox5__TextChanged(object sender, EventArgs e)
-        {
-            Regex mRegxExpressions;
-            if (rjTextBox5.Texts.Trim() != string.Empty)
-            {
-                mRegxExpressions = new Regex(@"^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,50}$");
+        
 
-                if (!mRegxExpressions.IsMatch(rjTextBox5.Texts.Trim()))
-                {
-                    errorProvider1.SetError(rjTextBox5, "رمز شما باید از 8 رقم بیشتر باشد و از کارکتر های حروف بزرگ، شمارش، و کارکتر های مانند @ استفاده کنید");
-                    chack = false;
-
-                }
-                else if (mRegxExpressions.IsMatch(rjTextBox5.Texts.Trim()))
-                {
-                    errorProvider1.Clear();
-                    chack = true;
-                }
-            }
-        }
-
-        private void rjTextBox6__TextChanged(object sender, EventArgs e)
-        {
-            if (rjTextBox6.Texts != rjTextBox5.Texts)
-            {
-                errorProvider1.SetError(rjTextBox6, "رمز یکسان نیست");
-                chack = false;
-            }
-            else
-            {
-                errorProvider1.Clear();
-                chack = true;
-            }
-        }
+      
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
@@ -154,16 +123,7 @@ namespace Accounting.App.Forms
                 rjTextBox3.Focus();
                 chack = false;
             }
-            else if (rjTextBox5.Texts.Trim() == string.Empty)
-            {
-                rjTextBox5.Focus();
-                chack = false;
-            }
-            else if (rjTextBox6.Texts.Trim() == string.Empty)
-            {
-                rjTextBox6.Focus();
-                chack = false;
-            }
+          
             if(chack == true)
             {
                 string imageName = Guid.NewGuid().ToString() + Path.GetExtension(guna2PictureBox1.ImageLocation);
@@ -179,7 +139,7 @@ namespace Accounting.App.Forms
                 costomer.FullName = rjTextBox1.Texts;
                 costomer.E_Post = rjTextBox2.Texts;
                 costomer.Mobile = rjTextBox3.Texts;
-                costomer.Password = rjTextBox5.Texts;
+                
                 costomer.Address = rjTextBox4.Texts;
                 costomer.PicAddress = imageName;
                 
@@ -212,8 +172,7 @@ namespace Accounting.App.Forms
                 rjTextBox1.Texts = customer.FullName;
                 rjTextBox2.Texts = customer.E_Post;
                 rjTextBox3.Texts = customer.Mobile;
-                rjTextBox5.Texts = customer.Password;
-                rjTextBox6.Texts = customer.Password;
+                
                 rjTextBox4.Texts = customer.Address;
                 guna2PictureBox1.ImageLocation = Application.StartupPath + "/Images/" + customer.PicAddress;
             }
