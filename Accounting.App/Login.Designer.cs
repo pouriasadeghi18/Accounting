@@ -84,7 +84,6 @@ namespace Accounting.App
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(562, 339);
             this.panel1.TabIndex = 4;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label2
             // 
@@ -132,7 +131,7 @@ namespace Accounting.App
             this.guna2TextBox2.SelectedText = "";
             this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
             this.guna2TextBox2.Size = new System.Drawing.Size(364, 43);
-            this.guna2TextBox2.TabIndex = 5;
+            this.guna2TextBox2.TabIndex = 1;
             // 
             // guna2TextBox1
             // 
@@ -158,7 +157,7 @@ namespace Accounting.App
             this.guna2TextBox1.SelectedText = "";
             this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
             this.guna2TextBox1.Size = new System.Drawing.Size(364, 43);
-            this.guna2TextBox1.TabIndex = 4;
+            this.guna2TextBox1.TabIndex = 2;
             // 
             // guna2Button1
             // 
@@ -172,8 +171,9 @@ namespace Accounting.App
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(454, 45);
-            this.guna2Button1.TabIndex = 1;
+            this.guna2Button1.TabIndex = 4;
             this.guna2Button1.Text = "ثبت نام";
+            this.guna2Button1.Visible = false;
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2Button2
@@ -191,6 +191,7 @@ namespace Accounting.App
             this.guna2Button2.Size = new System.Drawing.Size(454, 45);
             this.guna2Button2.TabIndex = 3;
             this.guna2Button2.Text = "ورود";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // guna2PictureBox1
             // 

@@ -8,6 +8,9 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BusinessEntity;
+using BusinessLogic;
+using FoxLearn.License;
 
 namespace Accounting.App
 {
@@ -24,7 +27,7 @@ namespace Accounting.App
             Regex mRegxExpression;
             if (guna2TextBox1.Text.Trim() != string.Empty)
             {
-                mRegxExpression = new Regex(@"^[\u0600-\u06FF]+$");
+                mRegxExpression = new Regex(@"^[\u0600-\u06FF ]+$");
 
                 if (!mRegxExpression.IsMatch(guna2TextBox1.Text.Trim()))
                 {
@@ -157,8 +160,49 @@ namespace Accounting.App
             }
             if (chack == true)
             {
-                //asdasd
+                Users users = new Users();
+                users.FullName = guna2TextBox1.Text;
+                users.E_Post = guna2TextBox2.Text;
+                users.Mobile = guna2TextBox3.Text;
+                users.Address = guna2TextBox4.Text;
+                users.Password = guna2TextBox5.Text;
+                UserBl bl = new UserBl();
+                MessageBox.Show(bl.Create(users));
+                DialogResult = DialogResult.OK;
             }
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            KeyManager km = new KeyManager(guna2TextBox7.Text);
+            string productKey = guna2TextBox8.Text;
+            if (km.ValidKey(ref productKey))
+            {
+                KeyValuesClass kv = new KeyValuesClass();
+                if (km.DisassembleKey(productKey, ref kv))
+                {
+                    LicenseInfo lic = new LicenseInfo();
+                    lic.ProductKey = productKey;
+                    lic.FullName = "Personal accounting";
+                    if (kv.Type == LicenseType.TRIAL)
+                    {
+                        lic.Day = kv.Expiration.Day;
+                        lic.Month = kv.Expiration.Month;
+                        lic.Year = kv.Expiration.Year;
+                    }
+
+                    km.SaveSuretyFile(string.Format(@"{0}\Key.lic", Application.StartupPath), lic);
+                    MessageBox.Show("فعال سازی برنامه با موفقیت انجام شد", "پیغام", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    guna2GradientPanel1.Enabled = true;
+                }
+            }
+            else
+                MessageBox.Show("کد لایسنس نامعتبر است", "پیغام", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void register_Load(object sender, EventArgs e)
+        {
+            guna2TextBox7.Text = ComputerInfo.GetComputerId();
         }
     }
 }

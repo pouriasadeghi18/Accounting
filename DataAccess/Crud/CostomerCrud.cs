@@ -57,7 +57,7 @@ namespace DataAccess.Crud
             Costomer.FullName = Costomersnew.FullName;
             Costomer.E_Post = Costomersnew.E_Post;
             Costomer.Mobile = Costomersnew.Mobile;
-            Costomer.Password = Costomersnew.Password;
+            
             Costomer.PicAddress = Costomersnew.PicAddress;
             db.SaveChanges();
             return "ویرایش با موقعیت انجام شد";

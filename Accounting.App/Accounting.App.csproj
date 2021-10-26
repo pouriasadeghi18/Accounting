@@ -64,6 +64,10 @@
     <Reference Include="FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.5.15.3\lib\net472\FontAwesome.Sharp.dll</HintPath>
     </Reference>
+    <Reference Include="FoxLearn.License, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\PORIW\Desktop\FoxLearn.License.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI2">
       <HintPath>C:\Users\PORIW\Desktop\Installations\Guna_UI_Framework_Ultimate\Guna UI Framework Ultimate 2.0.0.1\Guna UI Framework Ultimate v2.0.0.1 Lib-Master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
     </Reference>
@@ -74,10 +78,6 @@
     <Reference Include="Stimulsoft.Base, Version=2019.4.2.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a" />
     <Reference Include="Stimulsoft.Data, Version=2019.4.2.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a" />
     <Reference Include="Stimulsoft.Report, Version=2019.4.2.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL" />
-    <Reference Include="Stimulsoft.Report.Win, Version=2019.4.2.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Users\PORIW\Desktop\StimulSoft\Stimulsoft Reports 2019 4.2\Crack\Designers\.NET\Stimulsoft.Report.Win.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />

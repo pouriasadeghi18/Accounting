@@ -88,7 +88,7 @@ namespace Accounting.App.Forms
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             this.guna2ShadowPanel1.Radius = 5;
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel1.Size = new System.Drawing.Size(858, 556);
+            this.guna2ShadowPanel1.Size = new System.Drawing.Size(867, 556);
             this.guna2ShadowPanel1.TabIndex = 2;
             // 
             // rjButton2
@@ -177,7 +177,7 @@ namespace Accounting.App.Forms
             this.guna2GroupBox1.Name = "guna2GroupBox1";
             this.guna2GroupBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.guna2GroupBox1.ShadowDecoration.Parent = this.guna2GroupBox1;
-            this.guna2GroupBox1.Size = new System.Drawing.Size(400, 468);
+            this.guna2GroupBox1.Size = new System.Drawing.Size(421, 468);
             this.guna2GroupBox1.TabIndex = 9;
             this.guna2GroupBox1.Text = "اطلاعات شخصی";
             this.guna2GroupBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;

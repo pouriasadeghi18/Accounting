@@ -51,6 +51,7 @@ namespace Accounting.App
             this.label1 = new System.Windows.Forms.Label();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.label7 = new System.Windows.Forms.Label();
             this.guna2ShadowPanel1.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
@@ -68,7 +69,7 @@ namespace Accounting.App
             this.guna2ShadowPanel1.Radius = 5;
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel1.ShadowDepth = 50;
-            this.guna2ShadowPanel1.Size = new System.Drawing.Size(783, 713);
+            this.guna2ShadowPanel1.Size = new System.Drawing.Size(783, 733);
             this.guna2ShadowPanel1.TabIndex = 1;
             // 
             // guna2GradientPanel2
@@ -76,13 +77,14 @@ namespace Accounting.App
             this.guna2GradientPanel2.BorderColor = System.Drawing.Color.Black;
             this.guna2GradientPanel2.BorderRadius = 5;
             this.guna2GradientPanel2.BorderThickness = 1;
+            this.guna2GradientPanel2.Controls.Add(this.label7);
             this.guna2GradientPanel2.Controls.Add(this.guna2Button2);
             this.guna2GradientPanel2.Controls.Add(this.guna2TextBox8);
             this.guna2GradientPanel2.Controls.Add(this.guna2TextBox7);
             this.guna2GradientPanel2.Location = new System.Drawing.Point(24, 12);
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
             this.guna2GradientPanel2.ShadowDecoration.Parent = this.guna2GradientPanel2;
-            this.guna2GradientPanel2.Size = new System.Drawing.Size(736, 211);
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(736, 232);
             this.guna2GradientPanel2.TabIndex = 45;
             // 
             // guna2Button2
@@ -93,12 +95,13 @@ namespace Accounting.App
             this.guna2Button2.Font = new System.Drawing.Font("IRANSansWeb", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(67, 142);
+            this.guna2Button2.Location = new System.Drawing.Point(67, 175);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
             this.guna2Button2.Size = new System.Drawing.Size(575, 45);
             this.guna2Button2.TabIndex = 45;
             this.guna2Button2.Text = "فعال سازی نرم افزار";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // guna2TextBox8
             // 
@@ -116,7 +119,7 @@ namespace Accounting.App
             this.guna2TextBox8.Font = new System.Drawing.Font("IRANSansWeb", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox8.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox8.HoverState.Parent = this.guna2TextBox8;
-            this.guna2TextBox8.Location = new System.Drawing.Point(67, 78);
+            this.guna2TextBox8.Location = new System.Drawing.Point(67, 122);
             this.guna2TextBox8.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.guna2TextBox8.Name = "guna2TextBox8";
             this.guna2TextBox8.PasswordChar = '\0';
@@ -142,7 +145,7 @@ namespace Accounting.App
             this.guna2TextBox7.Font = new System.Drawing.Font("IRANSansWeb", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox7.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox7.HoverState.Parent = this.guna2TextBox7;
-            this.guna2TextBox7.Location = new System.Drawing.Point(67, 21);
+            this.guna2TextBox7.Location = new System.Drawing.Point(67, 65);
             this.guna2TextBox7.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.guna2TextBox7.Name = "guna2TextBox7";
             this.guna2TextBox7.PasswordChar = '\0';
@@ -171,7 +174,8 @@ namespace Accounting.App
             this.guna2GradientPanel1.Controls.Add(this.guna2TextBox2);
             this.guna2GradientPanel1.Controls.Add(this.label1);
             this.guna2GradientPanel1.Controls.Add(this.guna2TextBox1);
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(24, 229);
+            this.guna2GradientPanel1.Enabled = false;
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(24, 250);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
             this.guna2GradientPanel1.Size = new System.Drawing.Size(736, 467);
@@ -427,19 +431,32 @@ namespace Accounting.App
             this.errorProvider2.ContainerControl = this;
             this.errorProvider2.Icon = ((System.Drawing.Icon)(resources.GetObject("errorProvider2.Icon")));
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("IRANSansWeb", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(171, 20);
+            this.label7.Name = "label7";
+            this.label7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label7.Size = new System.Drawing.Size(393, 28);
+            this.label7.TabIndex = 46;
+            this.label7.Text = "با استفاده از کد دستگاه، لایسنس را از شرکت دریافت کنید";
+            // 
             // register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(807, 737);
+            this.ClientSize = new System.Drawing.Size(807, 757);
             this.Controls.Add(this.guna2ShadowPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Location = new System.Drawing.Point(825, 784);
             this.MaximizeBox = false;
             this.Name = "register";
             this.Text = "register";
+            this.Load += new System.EventHandler(this.register_Load);
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.guna2GradientPanel2.ResumeLayout(false);
+            this.guna2GradientPanel2.PerformLayout();
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
@@ -469,5 +486,6 @@ namespace Accounting.App
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox8;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox7;
         private System.Windows.Forms.ErrorProvider errorProvider2;
+        private System.Windows.Forms.Label label7;
     }
 }

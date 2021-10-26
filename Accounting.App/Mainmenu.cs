@@ -144,5 +144,15 @@ namespace Accounting.App
         {
             OpenChildForm(new Forms.AboutUs(), sender);
         }
+
+        private void Mainmenu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconButton4_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }
