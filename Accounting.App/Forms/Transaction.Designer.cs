@@ -40,7 +40,6 @@ namespace Accounting.App.Forms
             this.rjTextBox1 = new RJCodeAdvance.RJControls.RJTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.rjRadioButton2 = new RJCodeAdvance.RJControls.RJRadioButton();
             this.rjRadioButton1 = new RJCodeAdvance.RJControls.RJRadioButton();
             this.label2 = new System.Windows.Forms.Label();
@@ -49,11 +48,16 @@ namespace Accounting.App.Forms
             this.label4 = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.rjTextBox2 = new RJCodeAdvance.RJControls.RJTextBox();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.rjCircularPictureBox1 = new RJCodeAdvance.RJControls.RJCircularPictureBox();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2NumericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
+            this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // rjButton1
@@ -67,10 +71,10 @@ namespace Accounting.App.Forms
             this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton1.Font = new System.Drawing.Font("IRANSansWeb", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(327, 483);
+            this.rjButton1.Location = new System.Drawing.Point(14, 516);
             this.rjButton1.Name = "rjButton1";
             this.rjButton1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.rjButton1.Size = new System.Drawing.Size(579, 40);
+            this.rjButton1.Size = new System.Drawing.Size(468, 40);
             this.rjButton1.TabIndex = 1;
             this.rjButton1.Text = "ثبت";
             this.rjButton1.TextColor = System.Drawing.Color.White;
@@ -90,7 +94,7 @@ namespace Accounting.App.Forms
             this.guna2GroupBox1.Location = new System.Drawing.Point(0, 0);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
             this.guna2GroupBox1.ShadowDecoration.Parent = this.guna2GroupBox1;
-            this.guna2GroupBox1.Size = new System.Drawing.Size(300, 561);
+            this.guna2GroupBox1.Size = new System.Drawing.Size(362, 620);
             this.guna2GroupBox1.TabIndex = 2;
             this.guna2GroupBox1.Text = "اشخاص";
             this.guna2GroupBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -133,7 +137,7 @@ namespace Accounting.App.Forms
             this.guna2DataGridView1.RowHeadersWidth = 51;
             this.guna2DataGridView1.RowTemplate.Height = 24;
             this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(294, 461);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(356, 517);
             this.guna2DataGridView1.TabIndex = 3;
             this.guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -158,7 +162,6 @@ namespace Accounting.App.Forms
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.guna2DataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellClick);
-            this.guna2DataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick);
             // 
             // rjTextBox1
             // 
@@ -178,7 +181,7 @@ namespace Accounting.App.Forms
             this.rjTextBox1.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.rjTextBox1.PlaceholderText = "";
             this.rjTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.rjTextBox1.Size = new System.Drawing.Size(268, 43);
+            this.rjTextBox1.Size = new System.Drawing.Size(332, 43);
             this.rjTextBox1.TabIndex = 3;
             this.rjTextBox1.Texts = "جستجو";
             this.rjTextBox1.UnderlinedStyle = false;
@@ -188,7 +191,7 @@ namespace Accounting.App.Forms
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("IRANSansWeb", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label1.Location = new System.Drawing.Point(863, 30);
+            this.label1.Location = new System.Drawing.Point(497, 112);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label1.Size = new System.Drawing.Size(105, 28);
@@ -213,7 +216,7 @@ namespace Accounting.App.Forms
             this.guna2TextBox1.Font = new System.Drawing.Font("IRANSansWeb", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(327, 23);
+            this.guna2TextBox1.Location = new System.Drawing.Point(224, 106);
             this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
@@ -222,24 +225,15 @@ namespace Accounting.App.Forms
             this.guna2TextBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.guna2TextBox1.SelectedText = "";
             this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(530, 43);
+            this.guna2TextBox1.Size = new System.Drawing.Size(271, 43);
             this.guna2TextBox1.TabIndex = 5;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.rjRadioButton2);
-            this.panel1.Controls.Add(this.rjRadioButton1);
-            this.panel1.Location = new System.Drawing.Point(328, 77);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(530, 70);
-            this.panel1.TabIndex = 6;
             // 
             // rjRadioButton2
             // 
             this.rjRadioButton2.AutoSize = true;
             this.rjRadioButton2.CheckedColor = System.Drawing.Color.MediumSlateBlue;
             this.rjRadioButton2.Font = new System.Drawing.Font("IRANSansWeb", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.rjRadioButton2.Location = new System.Drawing.Point(122, 23);
+            this.rjRadioButton2.Location = new System.Drawing.Point(145, 17);
             this.rjRadioButton2.MinimumSize = new System.Drawing.Size(0, 21);
             this.rjRadioButton2.Name = "rjRadioButton2";
             this.rjRadioButton2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -257,7 +251,7 @@ namespace Accounting.App.Forms
             this.rjRadioButton1.AutoSize = true;
             this.rjRadioButton1.CheckedColor = System.Drawing.Color.MediumSlateBlue;
             this.rjRadioButton1.Font = new System.Drawing.Font("IRANSansWeb", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.rjRadioButton1.Location = new System.Drawing.Point(387, 23);
+            this.rjRadioButton1.Location = new System.Drawing.Point(319, 17);
             this.rjRadioButton1.MinimumSize = new System.Drawing.Size(0, 21);
             this.rjRadioButton1.Name = "rjRadioButton1";
             this.rjRadioButton1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -269,12 +263,13 @@ namespace Accounting.App.Forms
             this.rjRadioButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.rjRadioButton1.UnCheckedColor = System.Drawing.Color.Gray;
             this.rjRadioButton1.UseVisualStyleBackColor = true;
+            this.rjRadioButton1.CheckedChanged += new System.EventHandler(this.rjRadioButton1_CheckedChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("IRANSansWeb", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label2.Location = new System.Drawing.Point(866, 93);
+            this.label2.Location = new System.Drawing.Point(492, 225);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label2.Size = new System.Drawing.Size(101, 28);
@@ -285,6 +280,7 @@ namespace Accounting.App.Forms
             // guna2NumericUpDown1
             // 
             this.guna2NumericUpDown1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2NumericUpDown1.BorderRadius = 5;
             this.guna2NumericUpDown1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2NumericUpDown1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.guna2NumericUpDown1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -296,7 +292,7 @@ namespace Accounting.App.Forms
             this.guna2NumericUpDown1.FocusedState.Parent = this.guna2NumericUpDown1;
             this.guna2NumericUpDown1.Font = new System.Drawing.Font("IRANSansWeb", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2NumericUpDown1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2NumericUpDown1.Location = new System.Drawing.Point(327, 154);
+            this.guna2NumericUpDown1.Location = new System.Drawing.Point(14, 307);
             this.guna2NumericUpDown1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2NumericUpDown1.Maximum = new decimal(new int[] {
             1316134911,
@@ -305,14 +301,14 @@ namespace Accounting.App.Forms
             0});
             this.guna2NumericUpDown1.Name = "guna2NumericUpDown1";
             this.guna2NumericUpDown1.ShadowDecoration.Parent = this.guna2NumericUpDown1;
-            this.guna2NumericUpDown1.Size = new System.Drawing.Size(531, 45);
+            this.guna2NumericUpDown1.Size = new System.Drawing.Size(467, 45);
             this.guna2NumericUpDown1.TabIndex = 8;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("IRANSansWeb", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label3.Location = new System.Drawing.Point(872, 154);
+            this.label3.Location = new System.Drawing.Point(497, 307);
             this.label3.Name = "label3";
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label3.Size = new System.Drawing.Size(96, 28);
@@ -324,7 +320,7 @@ namespace Accounting.App.Forms
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("IRANSansWeb", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label4.Location = new System.Drawing.Point(916, 207);
+            this.label4.Location = new System.Drawing.Point(541, 372);
             this.label4.Name = "label4";
             this.label4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label4.Size = new System.Drawing.Size(52, 28);
@@ -345,7 +341,7 @@ namespace Accounting.App.Forms
             this.rjTextBox2.BorderSize = 2;
             this.rjTextBox2.Font = new System.Drawing.Font("IRANSansWeb", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjTextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.rjTextBox2.Location = new System.Drawing.Point(328, 207);
+            this.rjTextBox2.Location = new System.Drawing.Point(14, 372);
             this.rjTextBox2.Margin = new System.Windows.Forms.Padding(4);
             this.rjTextBox2.Multiline = true;
             this.rjTextBox2.Name = "rjTextBox2";
@@ -354,42 +350,84 @@ namespace Accounting.App.Forms
             this.rjTextBox2.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.rjTextBox2.PlaceholderText = "";
             this.rjTextBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.rjTextBox2.Size = new System.Drawing.Size(578, 257);
+            this.rjTextBox2.Size = new System.Drawing.Size(468, 137);
             this.rjTextBox2.TabIndex = 12;
             this.rjTextBox2.Texts = "";
             this.rjTextBox2.UnderlinedStyle = false;
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.BorderColor = System.Drawing.Color.Black;
+            this.guna2Panel1.BorderRadius = 5;
+            this.guna2Panel1.BorderThickness = 2;
+            this.guna2Panel1.Controls.Add(this.guna2Panel2);
+            this.guna2Panel1.Controls.Add(this.rjCircularPictureBox1);
+            this.guna2Panel1.Controls.Add(this.rjTextBox2);
+            this.guna2Panel1.Controls.Add(this.guna2TextBox1);
+            this.guna2Panel1.Controls.Add(this.label4);
+            this.guna2Panel1.Controls.Add(this.rjButton1);
+            this.guna2Panel1.Controls.Add(this.label3);
+            this.guna2Panel1.Controls.Add(this.label1);
+            this.guna2Panel1.Controls.Add(this.guna2NumericUpDown1);
+            this.guna2Panel1.Controls.Add(this.label2);
+            this.guna2Panel1.Location = new System.Drawing.Point(368, 12);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
+            this.guna2Panel1.Size = new System.Drawing.Size(620, 596);
+            this.guna2Panel1.TabIndex = 13;
+            // 
+            // rjCircularPictureBox1
+            // 
+            this.rjCircularPictureBox1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.rjCircularPictureBox1.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.rjCircularPictureBox1.BorderColor2 = System.Drawing.Color.HotPink;
+            this.rjCircularPictureBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.rjCircularPictureBox1.BorderSize = 2;
+            this.rjCircularPictureBox1.GradientAngle = 50F;
+            this.rjCircularPictureBox1.Location = new System.Drawing.Point(14, 19);
+            this.rjCircularPictureBox1.Name = "rjCircularPictureBox1";
+            this.rjCircularPictureBox1.Size = new System.Drawing.Size(190, 190);
+            this.rjCircularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.rjCircularPictureBox1.TabIndex = 13;
+            this.rjCircularPictureBox1.TabStop = false;
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.BorderColor = System.Drawing.Color.Black;
+            this.guna2Panel2.BorderRadius = 5;
+            this.guna2Panel2.BorderThickness = 1;
+            this.guna2Panel2.Controls.Add(this.rjRadioButton1);
+            this.guna2Panel2.Controls.Add(this.rjRadioButton2);
+            this.guna2Panel2.Location = new System.Drawing.Point(14, 225);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
+            this.guna2Panel2.Size = new System.Drawing.Size(467, 61);
+            this.guna2Panel2.TabIndex = 14;
             // 
             // Transaction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(981, 561);
-            this.Controls.Add(this.rjTextBox2);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.guna2NumericUpDown1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.guna2TextBox1);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(1000, 620);
+            this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2GroupBox1);
-            this.Controls.Add(this.rjButton1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(999, 608);
-            this.MinimumSize = new System.Drawing.Size(999, 608);
             this.Name = "Transaction";
             this.Text = "Transaction";
             this.Load += new System.EventHandler(this.Transaction_Load);
             this.guna2GroupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2NumericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).EndInit();
+            this.guna2Panel2.ResumeLayout(false);
+            this.guna2Panel2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -400,7 +438,6 @@ namespace Accounting.App.Forms
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2NumericUpDown guna2NumericUpDown1;
         private System.Windows.Forms.Label label3;
@@ -409,5 +446,8 @@ namespace Accounting.App.Forms
         private RJCodeAdvance.RJControls.RJRadioButton rjRadioButton1;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private RJCodeAdvance.RJControls.RJTextBox rjTextBox2;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private RJCodeAdvance.RJControls.RJCircularPictureBox rjCircularPictureBox1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
     }
 }

@@ -63,6 +63,36 @@ namespace Accounting.App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1000_F_358883559_KdMurrHdAPo8q7aEmj3ITU7QOUyjH2rS {
+            get {
+                object obj = ResourceManager.GetObject("1000_F_358883559_KdMurrHdAPo8q7aEmj3ITU7QOUyjH2rS", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cancel_icon {
+            get {
+                object obj = ResourceManager.GetObject("cancel-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap close {
+            get {
+                object obj = ResourceManager.GetObject("close", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap delete {
             get {
                 object obj = ResourceManager.GetObject("delete", resourceCulture);
@@ -86,6 +116,26 @@ namespace Accounting.App.Properties {
         internal static System.Drawing.Bitmap fabian_blank_pElSkGRA2NU_unsplash1 {
             get {
                 object obj = ResourceManager.GetObject("fabian-blank-pElSkGRA2NU-unsplash1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kelly_sikkema_SiOW0btU0zk_unsplash {
+            get {
+                object obj = ResourceManager.GetObject("kelly-sikkema-SiOW0btU0zk-unsplash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap minimize_icon_23794 {
+            get {
+                object obj = ResourceManager.GetObject("minimize-icon-23794", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,6 +183,26 @@ namespace Accounting.App.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pngwing_com {
+            get {
+                object obj = ResourceManager.GetObject("pngwing.com", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Programming_Delete_Sign_icon {
+            get {
+                object obj = ResourceManager.GetObject("Programming-Delete-Sign-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ps_code {
             get {
                 object obj = ResourceManager.GetObject("ps code", resourceCulture);
@@ -146,6 +216,36 @@ namespace Accounting.App.Properties {
         internal static System.Drawing.Bitmap search {
             get {
                 object obj = ResourceManager.GetObject("search", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Small_Business_Accounting {
+            get {
+                object obj = ResourceManager.GetObject("Small-Business-Accounting", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap User_Interface_Delete_Sign_icon {
+            get {
+                object obj = ResourceManager.GetObject("User-Interface-Delete-Sign-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap User_Interface_Delete_Sign_icon__1_ {
+            get {
+                object obj = ResourceManager.GetObject("User-Interface-Delete-Sign-icon (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

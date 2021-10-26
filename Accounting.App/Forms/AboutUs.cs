@@ -26,5 +26,15 @@ namespace Accounting.App.Forms
         {
             System.Diagnostics.Process.Start("https://t.me/Poryasadeghi");
         }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.instagram.com/_poryasadeghi/");
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://t.me/Poryasadeghi");
+        }
     }
 }

@@ -19,6 +19,15 @@ namespace Accounting.App
             closechildform.Visible = false;
         }
 
+        // Move Form
+        public const int WM_NCLBUTTONDOWN = 0xA1;
+        public const int HT_CAPTION = 0x2;
+
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        public static extern bool ReleaseCapture();
+
         private Button currentButton;
         private Random random;
         private int tempIndex;
@@ -45,7 +54,7 @@ namespace Accounting.App
                     Color color = SelectThemeColor();
                     currentButton = (Button)btnSender;
                     currentButton.BackColor = color;
-                    currentButton.ForeColor = Color.Black;
+                    currentButton.ForeColor = Color.White;
                     currentButton.Font = new System.Drawing.Font("Far.Diplomaat", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
                     panelLogo.BackColor = color;
                     panelTitle.BackColor = ThemeColor.changeColorBrightness(color, -0.3);
@@ -62,8 +71,8 @@ namespace Accounting.App
 
                 if (previousBtn.GetType() == typeof(FontAwesome.Sharp.IconButton))
                 {
-                    previousBtn.BackColor = Color.FromArgb(255, 185, 86);
-                    previousBtn.ForeColor = Color.Black;
+                    previousBtn.BackColor = Color.FromArgb(1, 36, 67);
+                    previousBtn.ForeColor = Color.White;
                     previousBtn.Font = new System.Drawing.Font("Far.Diplomaat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
                 }
             }
@@ -88,9 +97,9 @@ namespace Accounting.App
         {
             DisableButton();
             labelTitle.Text = "صفحه اصلی";
-            panelTitle.BackColor = Color.FromArgb(255, 151, 2);
-            panelLogo.BackColor = Color.FromArgb(254, 206, 0);
-            panelmenu.BackColor = Color.FromArgb(255, 185, 86);
+            panelTitle.BackColor = Color.FromArgb(1, 36, 67);
+            panelLogo.BackColor = Color.FromArgb(124, 131, 253);
+            panelmenu.BackColor = Color.FromArgb(1, 36, 67);
             closechildform.Visible = false;
         }
         private void menubtn1_Click(object sender, EventArgs e)
@@ -143,6 +152,31 @@ namespace Accounting.App
         private void iconButton5_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Forms.AboutUs(), sender);
+        }
+
+     
+
+        private void iconButton4_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+        private void panelTitle_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
+        }
+
+        private void panelLogo_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
         }
     }
 }

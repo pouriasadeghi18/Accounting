@@ -48,7 +48,11 @@ namespace DataAccess.Crud
         }
         public int GetId(string name)
         {
-            return db.Costomers.First(i => i.FullName == name).CostomerID;
+            
+                return db.Costomers.First(i => i.FullName == name).CostomerID;
+            
+           
+            
         }
         public string Update(int Costomerid, Costomer Costomersnew)
         {
@@ -57,7 +61,7 @@ namespace DataAccess.Crud
             Costomer.FullName = Costomersnew.FullName;
             Costomer.E_Post = Costomersnew.E_Post;
             Costomer.Mobile = Costomersnew.Mobile;
-            Costomer.Password = Costomersnew.Password;
+            
             Costomer.PicAddress = Costomersnew.PicAddress;
             db.SaveChanges();
             return "ویرایش با موقعیت انجام شد";

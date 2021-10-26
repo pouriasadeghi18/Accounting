@@ -50,8 +50,7 @@ namespace Accounting.App.Forms
         private void rjTextBox2__TextChanged(object sender, EventArgs e)
         {
             Regex mRegxExpression;
-            if (rjTextBox2.Texts.Trim() != string.Empty)
-            {
+            
                 mRegxExpression = new Regex(@"^([a-zA-Z0-9_\-])([a-zA-Z0-9_\-\.]*)@(\[((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\.){3}|((([a-zA-Z0-9\-]+)\.)+))([a-zA-Z]{2,}|(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\])$");
 
                 if (!mRegxExpression.IsMatch(rjTextBox2.Texts.Trim()))
@@ -66,14 +65,13 @@ namespace Accounting.App.Forms
                     errorProvider1.Clear();
                     chack = true;
                 }
-            }
+            
         }
 
         private void rjTextBox3__TextChanged(object sender, EventArgs e)
         {
             Regex mRegxExpression;
-            if (rjTextBox3.Texts.Trim() != string.Empty)
-            {
+            
                 mRegxExpression = new Regex(@"([0-9])$");
 
                 if (!mRegxExpression.IsMatch(rjTextBox3.Texts.Trim()) || rjTextBox3.Texts.Length != 11)
@@ -90,7 +88,7 @@ namespace Accounting.App.Forms
                     errorProvider1.Clear();
                     chack = true;
                 }
-            }
+            
         }
 
         
@@ -113,16 +111,7 @@ namespace Accounting.App.Forms
                 rjTextBox1.Focus();
                 chack = false;
             }
-            else if (rjTextBox2.Texts.Trim() == string.Empty)
-            {
-                rjTextBox2.Focus();
-                chack = false;
-            }
-            else if (rjTextBox3.Texts.Trim() == string.Empty)
-            {
-                rjTextBox3.Focus();
-                chack = false;
-            }
+          
           
             if(chack == true)
             {

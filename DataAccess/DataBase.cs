@@ -12,8 +12,13 @@ namespace DataAccess
     public class DataBase:DbContext
     {
         public DataBase() : base("DBcontect") { }
+        public DbSet<Users> Users { get; set; }
+       
+        
         public DbSet<Costomer> Costomers { get; set; }
         public DbSet<Accounting> Accountings { get; set; }
         public DbSet<AccountingType> AccountingTypes { get; set; }
+        
+
     }
 }

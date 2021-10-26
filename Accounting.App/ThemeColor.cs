@@ -11,20 +11,13 @@ namespace Accounting.App
     {
         public static List<string> ColorList = new List<string>()
         {
-            "#02A8F4",
+            "#004E71",
             "#0170A2",
-            "#AACFE0",
-            "#0F6716",
-            "#5F9963",
-            "#A0669C",
-            "#A0669C",
-            "#D4BBD3",
-            "#8D7C8C",
-            "#b2beb5",
-            "#ffffff",
-            "#89cff0",
-            "#0087ff",
-            "#5fffaf",
+            "#0186C2",
+            "#012443",
+            "#7C83FD",
+            "#131518",
+           
         };
         public static Color changeColorBrightness(Color color, double correctionFactory)
         {

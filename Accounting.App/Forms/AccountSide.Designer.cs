@@ -82,7 +82,7 @@ namespace Accounting.App.Forms
             this.guna2DataGridView1.RowHeadersWidth = 51;
             this.guna2DataGridView1.RowTemplate.Height = 24;
             this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(981, 417);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(1000, 513);
             this.guna2DataGridView1.TabIndex = 0;
             this.guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -120,7 +120,7 @@ namespace Accounting.App.Forms
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.toolStrip1.Size = new System.Drawing.Size(981, 85);
+            this.toolStrip1.Size = new System.Drawing.Size(1000, 85);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -189,7 +189,7 @@ namespace Accounting.App.Forms
             this.guna2TextBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.guna2TextBox1.SelectedText = "";
             this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(981, 49);
+            this.guna2TextBox1.Size = new System.Drawing.Size(1000, 49);
             this.guna2TextBox1.TabIndex = 2;
             this.guna2TextBox1.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
@@ -197,10 +197,11 @@ namespace Accounting.App.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(981, 526);
+            this.ClientSize = new System.Drawing.Size(1000, 620);
             this.Controls.Add(this.guna2TextBox1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.guna2DataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AccountSide";
             this.Text = "AccountSide";
