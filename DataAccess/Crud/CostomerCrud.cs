@@ -32,7 +32,7 @@ namespace DataAccess.Crud
         }
         public bool Read(Costomer costomer)
         {
-            return db.Costomers.Any(i => i.E_Post == costomer.E_Post || i.Mobile == costomer.Mobile);
+            return db.Costomers.Any(i => i.CostomerID == costomer.CostomerID );
         }
         //public bool ReadName(Costomer costomer)
         //{

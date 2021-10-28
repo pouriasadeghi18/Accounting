@@ -139,20 +139,7 @@ namespace Accounting.App
            
         }
 
-        private void iconButton6_Click_1(object sender, EventArgs e)
-        {
-            ActivateButton(sender);
-            DialogResult dialogResult = MessageBox.Show("آیا میخواهید از برنامه خارج شوید", "خروج", MessageBoxButtons.YesNo);
-            if (dialogResult == DialogResult.Yes)
-            {
-                Application.Exit();
-            }
-        }
-
-        private void iconButton5_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new Forms.AboutUs(), sender);
-        }
+    
 
      
 
@@ -177,6 +164,26 @@ namespace Accounting.App
                 ReleaseCapture();
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
+        }
+
+        private void iconButton5_Click_1(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.AboutUs(), sender);
+        }
+
+        private void iconButton6_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            DialogResult dialogResult = MessageBox.Show("آیا میخواهید از برنامه خارج شوید", "خروج", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void iconButton7_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.Chart(), sender);
         }
     }
 }
