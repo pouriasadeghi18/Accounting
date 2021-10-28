@@ -73,13 +73,21 @@ namespace Accounting.App.Forms
 
         private void toolStripButton3_Click(object sender, EventArgs e)
         {
-            int costomerId = int.Parse(guna2DataGridView1.CurrentRow.Cells[0].Value.ToString());
-            string message = guna2DataGridView1.CurrentRow.Cells[1].Value.ToString();
-            
-            if(MessageBox.Show($"آیا از حذف {message} مطئن هستید؟", "حذف",MessageBoxButtons.YesNo) == DialogResult.Yes)
+            try
             {
-                Bl.Delete(costomerId);
+                int costomerId = int.Parse(guna2DataGridView1.CurrentRow.Cells[0].Value.ToString());
+                string message = guna2DataGridView1.CurrentRow.Cells[1].Value.ToString();
+
+                if (MessageBox.Show($"آیا از حذف {message} مطئن هستید؟", "حذف", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    Bl.Delete(costomerId);
+                }
             }
+            catch
+            {
+                MessageBox.Show("شخصی را انتخاب نکرده اید");
+            }
+           
             
             SetDataGrid();
         }

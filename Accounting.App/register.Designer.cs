@@ -61,7 +61,7 @@ namespace Accounting.App
             // 
             // guna2ShadowPanel1
             // 
-            this.guna2ShadowPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(36)))), ((int)(((byte)(67)))));
+            this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel1.Controls.Add(this.button1);
             this.guna2ShadowPanel1.Controls.Add(this.guna2GradientPanel2);
             this.guna2ShadowPanel1.Controls.Add(this.guna2GradientPanel1);
