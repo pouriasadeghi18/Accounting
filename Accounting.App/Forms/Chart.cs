@@ -212,5 +212,13 @@ namespace Accounting.App.Forms
                 MessageBox.Show(ex.Message, "خطا");
             }
         }
+
+        private void Chart_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                this.Close();
+            }
+        }
     }
 }

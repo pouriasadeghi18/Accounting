@@ -314,6 +314,7 @@ namespace Accounting.App.Forms
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "AccountSideAddForm";
             this.Load += new System.EventHandler(this.AccountSideAddForm_Load);
+           
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.guna2GroupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();

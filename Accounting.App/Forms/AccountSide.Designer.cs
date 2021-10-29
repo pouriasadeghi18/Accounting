@@ -206,6 +206,7 @@ namespace Accounting.App.Forms
             this.Name = "AccountSide";
             this.Text = "AccountSide";
             this.Load += new System.EventHandler(this.AccountSide_Load);
+           
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();

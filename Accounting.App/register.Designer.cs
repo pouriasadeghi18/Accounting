@@ -494,6 +494,7 @@ namespace Accounting.App
             this.Name = "register";
             this.Text = "register";
             this.Load += new System.EventHandler(this.register_Load);
+            
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.register_MouseDown);
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.guna2GradientPanel2.ResumeLayout(false);

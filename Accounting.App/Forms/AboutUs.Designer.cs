@@ -37,8 +37,8 @@ namespace Accounting.App.Forms
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
@@ -149,17 +149,6 @@ namespace Accounting.App.Forms
             this.guna2Panel1.Size = new System.Drawing.Size(421, 490);
             this.guna2Panel1.TabIndex = 7;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("IRANSansWeb", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(92, 411);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 32);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "09059621619";
-            // 
             // iconButton3
             // 
             this.iconButton3.FlatAppearance.BorderSize = 0;
@@ -175,6 +164,17 @@ namespace Accounting.App.Forms
             this.iconButton3.TabIndex = 8;
             this.iconButton3.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("IRANSansWeb", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(92, 411);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(136, 32);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "09059621619";
+            // 
             // AboutUs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 22F);
@@ -189,6 +189,7 @@ namespace Accounting.App.Forms
             this.Name = "AboutUs";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "AboutUs";
+           
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();

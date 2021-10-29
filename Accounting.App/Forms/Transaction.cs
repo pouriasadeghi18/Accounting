@@ -203,9 +203,15 @@ namespace Accounting.App.Forms
             this.Close();
         }
 
-        private void guna2ShadowPanel1_Paint(object sender, PaintEventArgs e)
-        {
 
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if(keyData == (Keys.Escape))
+            {
+                this.Close();
+                return true;
+            }
+            return base.ProcessCmdKey(ref msg, keyData);
         }
     }
 }

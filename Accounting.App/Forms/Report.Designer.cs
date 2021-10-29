@@ -362,6 +362,7 @@ namespace Accounting.App.Forms
             this.Name = "Report";
             this.Text = "PaymentsReport";
             this.Load += new System.EventHandler(this.Report_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Report_KeyDown);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);

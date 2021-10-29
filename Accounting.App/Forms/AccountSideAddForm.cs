@@ -166,5 +166,15 @@ namespace Accounting.App.Forms
                 guna2PictureBox1.ImageLocation = Application.StartupPath + "/Images/" + customer.PicAddress;
             }
         }
+
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == (Keys.Escape))
+            {
+                this.Close();
+                return true;
+            }
+            return base.ProcessCmdKey(ref msg, keyData);
+        }
     }
 }

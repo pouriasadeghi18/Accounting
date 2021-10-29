@@ -426,7 +426,6 @@ namespace Accounting.App.Forms
             this.guna2ShadowPanel1.ShadowShift = 10;
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(976, 596);
             this.guna2ShadowPanel1.TabIndex = 4;
-            this.guna2ShadowPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2ShadowPanel1_Paint);
             // 
             // Transaction
             // 
@@ -441,7 +440,10 @@ namespace Accounting.App.Forms
             this.Name = "Transaction";
             this.Text = "Transaction";
             this.Load += new System.EventHandler(this.Transaction_Load);
+            
+            
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Transaction_MouseDown);
+            
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2NumericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).EndInit();

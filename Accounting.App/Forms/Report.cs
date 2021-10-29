@@ -183,5 +183,13 @@ namespace Accounting.App.Forms
             stiReport1.Render();
             stiReport1.Show();
         }
+
+        private void Report_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                this.Close();
+            }
+        }
     }
 }
