@@ -159,6 +159,7 @@ namespace Accounting.App
             this.guna2TextBox8.ShadowDecoration.Parent = this.guna2TextBox8;
             this.guna2TextBox8.Size = new System.Drawing.Size(575, 43);
             this.guna2TextBox8.TabIndex = 37;
+            this.guna2TextBox8.KeyDown += new System.Windows.Forms.KeyEventHandler(this.guna2TextBox8_KeyDown);
             // 
             // guna2TextBox7
             // 
@@ -188,6 +189,7 @@ namespace Accounting.App
             this.guna2TextBox7.ShadowDecoration.Parent = this.guna2TextBox7;
             this.guna2TextBox7.Size = new System.Drawing.Size(575, 43);
             this.guna2TextBox7.TabIndex = 36;
+            this.guna2TextBox7.KeyDown += new System.Windows.Forms.KeyEventHandler(this.guna2TextBox7_KeyDown);
             // 
             // guna2GradientPanel1
             // 
@@ -273,6 +275,7 @@ namespace Accounting.App
             this.guna2TextBox6.Size = new System.Drawing.Size(215, 43);
             this.guna2TextBox6.TabIndex = 43;
             this.guna2TextBox6.TextChanged += new System.EventHandler(this.guna2TextBox6_TextChanged);
+            this.guna2TextBox6.KeyDown += new System.Windows.Forms.KeyEventHandler(this.guna2TextBox6_KeyDown);
             // 
             // label5
             // 
@@ -313,6 +316,7 @@ namespace Accounting.App
             this.guna2TextBox5.Size = new System.Drawing.Size(215, 43);
             this.guna2TextBox5.TabIndex = 41;
             this.guna2TextBox5.TextChanged += new System.EventHandler(this.guna2TextBox5_TextChanged);
+            this.guna2TextBox5.KeyDown += new System.Windows.Forms.KeyEventHandler(this.guna2TextBox5_KeyDown);
             // 
             // label4
             // 
@@ -353,6 +357,7 @@ namespace Accounting.App
             this.guna2TextBox4.ShadowDecoration.Parent = this.guna2TextBox4;
             this.guna2TextBox4.Size = new System.Drawing.Size(575, 43);
             this.guna2TextBox4.TabIndex = 39;
+            this.guna2TextBox4.KeyDown += new System.Windows.Forms.KeyEventHandler(this.guna2TextBox4_KeyDown);
             // 
             // label3
             // 
@@ -393,6 +398,7 @@ namespace Accounting.App
             this.guna2TextBox3.Size = new System.Drawing.Size(553, 43);
             this.guna2TextBox3.TabIndex = 37;
             this.guna2TextBox3.TextChanged += new System.EventHandler(this.guna2TextBox3_TextChanged);
+            this.guna2TextBox3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.guna2TextBox3_KeyDown);
             // 
             // label2
             // 
@@ -433,6 +439,7 @@ namespace Accounting.App
             this.guna2TextBox2.Size = new System.Drawing.Size(575, 43);
             this.guna2TextBox2.TabIndex = 35;
             this.guna2TextBox2.TextChanged += new System.EventHandler(this.guna2TextBox2_TextChanged);
+            this.guna2TextBox2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.guna2TextBox2_KeyDown);
             // 
             // label1
             // 
@@ -474,6 +481,7 @@ namespace Accounting.App
             this.guna2TextBox1.Size = new System.Drawing.Size(494, 43);
             this.guna2TextBox1.TabIndex = 33;
             this.guna2TextBox1.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
+            this.guna2TextBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.guna2TextBox1_KeyDown);
             // 
             // errorProvider2
             // 
@@ -494,7 +502,6 @@ namespace Accounting.App
             this.Name = "register";
             this.Text = "register";
             this.Load += new System.EventHandler(this.register_Load);
-            
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.register_MouseDown);
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.guna2GradientPanel2.ResumeLayout(false);

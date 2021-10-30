@@ -193,6 +193,7 @@ namespace Accounting.App
             this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
             this.guna2TextBox2.Size = new System.Drawing.Size(536, 43);
             this.guna2TextBox2.TabIndex = 1;
+            this.guna2TextBox2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.guna2TextBox2_KeyDown);
             // 
             // guna2TextBox1
             // 
@@ -223,6 +224,7 @@ namespace Accounting.App
             this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
             this.guna2TextBox1.Size = new System.Drawing.Size(536, 43);
             this.guna2TextBox1.TabIndex = 2;
+            this.guna2TextBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.guna2TextBox1_KeyDown);
             // 
             // guna2Button1
             // 

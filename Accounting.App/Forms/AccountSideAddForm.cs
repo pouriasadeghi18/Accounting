@@ -25,6 +25,16 @@ namespace Accounting.App.Forms
         bool chack = false;
         CostomerBL bl = new CostomerBL();
 
+        public void nexttextbox(object btnSender, KeyEventArgs e)
+        {
+            if (btnSender != null)
+            {
+                if (e.KeyCode == Keys.Enter)
+                {
+                    SendKeys.Send("{TAB}");
+                }
+            }
+        }
         private void rjTextBox1__TextChanged(object sender, EventArgs e)
         {
             Regex mRegxExpression;
@@ -146,7 +156,7 @@ namespace Accounting.App.Forms
             }
             else
             {
-                MessageBox.Show("لطفا اطلاعات  را دقیق وارد کنید");
+                MessageBox.Show("لطفا اطلاعات  را دقیق وارد کنید","اخطار",MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
 
         }
@@ -175,6 +185,31 @@ namespace Accounting.App.Forms
                 return true;
             }
             return base.ProcessCmdKey(ref msg, keyData);
+        }
+
+        private void rjTextBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            nexttextbox(sender, e);
+        }
+
+        private void rjTextBox2_KeyDown(object sender, KeyEventArgs e)
+        {
+            nexttextbox(sender, e);
+        }
+
+        private void rjTextBox3_KeyDown(object sender, KeyEventArgs e)
+        {
+            nexttextbox(sender, e);
+        }
+
+        private void rjTextBox4_KeyDown(object sender, KeyEventArgs e)
+        {
+            nexttextbox(sender, e);
+        }
+
+        private void guna2Button1_KeyDown(object sender, KeyEventArgs e)
+        {
+            nexttextbox(sender, e);
         }
     }
 }

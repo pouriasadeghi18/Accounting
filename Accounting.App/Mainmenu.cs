@@ -17,6 +17,11 @@ namespace Accounting.App
             InitializeComponent();
             random = new Random();
             closechildform.Visible = false;
+           
+        }
+        private void MainMenu_OnKeyBoardShortCut(object sender , KeyEventArgs e)
+        {
+
         }
 
         // Move Form
@@ -185,5 +190,40 @@ namespace Accounting.App
         {
             OpenChildForm(new Forms.Chart(), sender);
         }
+
+
+
+        private void Mainmenu_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.Control && e.KeyCode == Keys.A)
+            {
+                menubtn1.PerformClick();
+            }
+            if (e.Control && e.KeyCode == Keys.B)
+            {
+                iconButton1.PerformClick();
+            }
+            if (e.Control && e.KeyCode == Keys.S)
+            {
+                iconButton2.PerformClick();
+            }
+            if (e.Control && e.KeyCode == Keys.D)
+            {
+                iconButton3.PerformClick();
+            }
+            if (e.Control && e.KeyCode == Keys.E)
+            {
+                iconButton7.PerformClick();
+            }
+            if (e.Control && e.KeyCode == Keys.H)
+            {
+                iconButton5.PerformClick();
+            }
+            if (e.Control && e.KeyCode == Keys.C)
+            {
+                iconButton6.PerformClick();
+            }
+        }
+
     }
 }

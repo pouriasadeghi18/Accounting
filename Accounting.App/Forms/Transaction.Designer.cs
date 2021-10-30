@@ -103,6 +103,7 @@ namespace Accounting.App.Forms
             this.guna2NumericUpDown1.ShadowDecoration.Parent = this.guna2NumericUpDown1;
             this.guna2NumericUpDown1.Size = new System.Drawing.Size(501, 45);
             this.guna2NumericUpDown1.TabIndex = 8;
+            this.guna2NumericUpDown1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.guna2NumericUpDown1_KeyDown);
             // 
             // label1
             // 
@@ -188,6 +189,7 @@ namespace Accounting.App.Forms
             this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
             this.guna2TextBox1.Size = new System.Drawing.Size(292, 43);
             this.guna2TextBox1.TabIndex = 5;
+            this.guna2TextBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.guna2TextBox1_KeyDown);
             // 
             // rjTextBox2
             // 
@@ -211,6 +213,7 @@ namespace Accounting.App.Forms
             this.rjTextBox2.TabIndex = 12;
             this.rjTextBox2.Texts = "";
             this.rjTextBox2.UnderlinedStyle = false;
+            this.rjTextBox2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.rjTextBox2_KeyDown);
             // 
             // rjCircularPictureBox1
             // 
@@ -250,6 +253,7 @@ namespace Accounting.App.Forms
             this.rjTextBox1.Texts = "جستجو";
             this.rjTextBox1.UnderlinedStyle = false;
             this.rjTextBox1._TextChanged += new System.EventHandler(this.rjTextBox1__TextChanged);
+            this.rjTextBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.rjTextBox1_KeyDown);
             // 
             // guna2DataGridView1
             // 
@@ -350,6 +354,7 @@ namespace Accounting.App.Forms
             this.rjRadioButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.rjRadioButton2.UnCheckedColor = System.Drawing.Color.Gray;
             this.rjRadioButton2.UseVisualStyleBackColor = false;
+            this.rjRadioButton2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.rjRadioButton2_KeyDown);
             // 
             // rjRadioButton1
             // 
@@ -369,6 +374,7 @@ namespace Accounting.App.Forms
             this.rjRadioButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.rjRadioButton1.UnCheckedColor = System.Drawing.Color.Gray;
             this.rjRadioButton1.UseVisualStyleBackColor = false;
+            this.rjRadioButton1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.rjRadioButton1_KeyDown);
             // 
             // guna2Panel2
             // 
@@ -440,10 +446,7 @@ namespace Accounting.App.Forms
             this.Name = "Transaction";
             this.Text = "Transaction";
             this.Load += new System.EventHandler(this.Transaction_Load);
-            
-            
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Transaction_MouseDown);
-            
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2NumericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).EndInit();

@@ -33,6 +33,16 @@ namespace Accounting.App
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
 
         }
+        public void nexttextbox(object btnSender, KeyEventArgs e)
+        {
+            if (btnSender != null)
+            {
+                if (e.KeyCode == Keys.Enter)
+                {
+                    SendKeys.Send("{TAB}");
+                }
+            }
+        }
         // Move Form
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
@@ -261,6 +271,46 @@ namespace Accounting.App
                 return true;
             }
             return base.ProcessCmdKey(ref msg, keyData);
+        }
+
+        private void guna2TextBox7_KeyDown(object sender, KeyEventArgs e)
+        {
+            nexttextbox(sender, e);
+        }
+
+        private void guna2TextBox8_KeyDown(object sender, KeyEventArgs e)
+        {
+            nexttextbox(sender, e);
+        }
+
+        private void guna2TextBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            nexttextbox(sender, e);
+        }
+
+        private void guna2TextBox2_KeyDown(object sender, KeyEventArgs e)
+        {
+            nexttextbox(sender, e);
+        }
+
+        private void guna2TextBox3_KeyDown(object sender, KeyEventArgs e)
+        {
+            nexttextbox(sender, e);
+        }
+
+        private void guna2TextBox4_KeyDown(object sender, KeyEventArgs e)
+        {
+            nexttextbox(sender, e);
+        }
+
+        private void guna2TextBox5_KeyDown(object sender, KeyEventArgs e)
+        {
+            nexttextbox(sender, e);
+        }
+
+        private void guna2TextBox6_KeyDown(object sender, KeyEventArgs e)
+        {
+            nexttextbox(sender, e);
         }
     }
 }

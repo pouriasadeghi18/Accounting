@@ -40,6 +40,16 @@ namespace Accounting.App
             bl.Create(one);
             bl.Create(two);
         }
+        public void nexttextbox(object btnSender, KeyEventArgs e)
+        {
+            if (btnSender != null)
+            {
+                if (e.KeyCode == Keys.Enter)
+                {
+                    SendKeys.Send("{TAB}");
+                }
+            }
+        }
 
         // Move Form
         public const int WM_NCLBUTTONDOWN = 0xA1;
@@ -105,6 +115,7 @@ namespace Accounting.App
             {
                 Application.Exit();
             }
+           
         }
 
         private void Login_MouseDown(object sender, MouseEventArgs e)
@@ -114,6 +125,19 @@ namespace Accounting.App
                 ReleaseCapture();
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
+            
+        }
+        
+       
+
+        private void guna2TextBox2_KeyDown(object sender, KeyEventArgs e)
+        {
+            nexttextbox(sender, e);
+        }
+
+        private void guna2TextBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            nexttextbox(sender, e);
         }
     }
 }

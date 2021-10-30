@@ -52,6 +52,16 @@ namespace Accounting.App.Forms
             guna2DataGridView1.Columns["Mobile"].Visible = false;
 
         }
+        public void nexttextbox(object btnSender, KeyEventArgs e)
+        {
+            if (btnSender != null)
+            {
+                if (e.KeyCode == Keys.Enter)
+                {
+                    SendKeys.Send("{TAB}");
+                }
+            }
+        }
         void SearchData(string TextBox)
         {
             CostomerBL Bl = new CostomerBL();
@@ -212,6 +222,40 @@ namespace Accounting.App.Forms
                 return true;
             }
             return base.ProcessCmdKey(ref msg, keyData);
+        }
+
+     
+
+     
+
+        private void guna2TextBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            nexttextbox(sender, e);
+        }
+
+        private void rjRadioButton1_KeyDown(object sender, KeyEventArgs e)
+        {
+            nexttextbox(sender, e);
+        }
+
+        private void rjRadioButton2_KeyDown(object sender, KeyEventArgs e)
+        {
+            nexttextbox(sender, e);
+        }
+
+        private void guna2NumericUpDown1_KeyDown(object sender, KeyEventArgs e)
+        {
+            nexttextbox(sender, e);
+        }
+
+        private void rjTextBox2_KeyDown(object sender, KeyEventArgs e)
+        {
+            nexttextbox(sender, e);
+        }
+
+        private void rjTextBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            nexttextbox(sender, e);
         }
     }
 }

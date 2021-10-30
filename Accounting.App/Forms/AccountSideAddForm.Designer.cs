@@ -76,6 +76,7 @@ namespace Accounting.App.Forms
             this.rjTextBox1.Texts = "";
             this.rjTextBox1.UnderlinedStyle = false;
             this.rjTextBox1._TextChanged += new System.EventHandler(this.rjTextBox1__TextChanged);
+            this.rjTextBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.rjTextBox1_KeyDown);
             // 
             // guna2ShadowPanel1
             // 
@@ -145,6 +146,7 @@ namespace Accounting.App.Forms
             this.guna2Button1.TabIndex = 2;
             this.guna2Button1.Text = "انتخاب تصویر";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.guna2Button1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.guna2Button1_KeyDown);
             // 
             // guna2PictureBox1
             // 
@@ -227,6 +229,7 @@ namespace Accounting.App.Forms
             this.rjTextBox4.TabIndex = 7;
             this.rjTextBox4.Texts = "";
             this.rjTextBox4.UnderlinedStyle = false;
+            this.rjTextBox4.KeyDown += new System.Windows.Forms.KeyEventHandler(this.rjTextBox4_KeyDown);
             // 
             // rjTextBox2
             // 
@@ -250,6 +253,7 @@ namespace Accounting.App.Forms
             this.rjTextBox2.Texts = "";
             this.rjTextBox2.UnderlinedStyle = false;
             this.rjTextBox2._TextChanged += new System.EventHandler(this.rjTextBox2__TextChanged);
+            this.rjTextBox2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.rjTextBox2_KeyDown);
             // 
             // label3
             // 
@@ -295,6 +299,7 @@ namespace Accounting.App.Forms
             this.rjTextBox3.Texts = "";
             this.rjTextBox3.UnderlinedStyle = false;
             this.rjTextBox3._TextChanged += new System.EventHandler(this.rjTextBox3__TextChanged);
+            this.rjTextBox3.KeyDown += new System.Windows.Forms.KeyEventHandler(this.rjTextBox3_KeyDown);
             // 
             // errorProvider1
             // 
@@ -314,7 +319,6 @@ namespace Accounting.App.Forms
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "AccountSideAddForm";
             this.Load += new System.EventHandler(this.AccountSideAddForm_Load);
-           
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.guna2GroupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
